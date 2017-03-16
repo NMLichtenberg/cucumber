@@ -1,0 +1,89 @@
+[
+  {
+    "uri": "features/demo.feature",
+    "id": "demo",
+    "keyword": "Feature",
+    "name": "Demo",
+    "description": "",
+    "line": 1,
+    "elements": [
+      {
+        "id": "demo;google-search",
+        "keyword": "Scenario",
+        "name": "Google Search",
+        "description": "",
+        "line": 3,
+        "type": "scenario",
+        "before": [
+          {
+            "match": {
+              "location": "capybara-2.7.1/lib/capybara/cucumber.rb:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 21489
+            }
+          },
+          {
+            "match": {
+              "location": "capybara-2.7.1/lib/capybara/cucumber.rb:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9942
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Given ",
+            "name": "I am on \"http://www.google.com\"",
+            "line": 4,
+            "match": {
+              "location": "features/step_definitions/steps.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2310263259
+            }
+          },
+          {
+            "keyword": "When ",
+            "name": "I search for \"Hello World!\"",
+            "line": 5,
+            "match": {
+              "location": "features/step_definitions/steps.rb:5"
+            },
+            "result": {
+              "status": "failed",
+              "error_message": "Unable to find field \"lst-ib\" (Capybara::ElementNotFound)\n./features/step_definitions/steps.rb:7:in `/^I search for \"([^\"]*)\"$/'\nfeatures/demo.feature:5:in `When I search for \"Hello World!\"'",
+              "duration": 2029320498
+            }
+          },
+          {
+            "keyword": "Then ",
+            "name": "I should see results containing the phrase",
+            "line": 6,
+            "match": {
+              "location": "features/step_definitions/steps.rb:11"
+            },
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "capybara-2.7.1/lib/capybara/cucumber.rb:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 6064981
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
